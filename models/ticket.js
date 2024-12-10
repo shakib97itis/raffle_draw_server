@@ -7,6 +7,8 @@ class Ticket {
     this.price = price;
   }
   id = uid.rnd();
+  purchaseDate = new Date()
+  updateDate = new Date()
 }
 
 module.exports = Ticket;
