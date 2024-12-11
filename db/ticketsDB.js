@@ -7,8 +7,12 @@ class TicketsDB {
    * Get all tickets from database
    * @returns {Array.<Object>} An array of ticket objects
    */
-  getTickets = () => {
+  getAllTickets = () => {
     return this.tickets;
+  };
+
+  getSingleTicket = (tickedId) => {
+    return this.tickets.find((value) => value.tickedId === tickedId);
   };
 
   /**
