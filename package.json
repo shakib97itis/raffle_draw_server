@@ -1,9 +1,10 @@
 {
   "name": "backend-project-stracture",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "api/index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon /api/index.js",
+    "dev": "nodemon /api/index.js"
   },
   "author": "",
   "license": "ISC",
