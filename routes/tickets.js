@@ -2,6 +2,16 @@ const router = require("express").Router();
 const db = require("../db/ticketsDB");
 
 /**
+ * To draw tickets randomly
+ */
+
+router.get("/draw", (req, res) => {
+  const tickets = db.draw();
+  res.status(200).json(tickets);
+});
+
+
+/**
  * To sell a single ticket
  * @route POST /s/sell
  * @param {string} username - The username of the buyer
